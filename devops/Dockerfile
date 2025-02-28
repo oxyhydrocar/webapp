@@ -1,4 +1,3 @@
-# Hardcoded secrets
 FROM python:3.8
 
 ENV DB_USER=admin
