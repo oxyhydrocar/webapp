@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad React App</title>
+</head>
+<body>
+    <script>
+        // Exposed API Key
+        const API_KEY = "123456-SECRET-KEY";
+
+        // No input validation
+        function login() {
+            let username = document.getElementById("user").value;
+            let password = document.getElementById("pass").value;
+            fetch(`http://localhost:5000/login?user=${username}&pass=${password}`) // No sanitation
+                .then(res => res.text())
+                .then(data => console.log(data));
+        }
+    </script>
+
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</body>
+</html>
