@@ -27,7 +27,6 @@ class MyClass:
         self.value += 1
 
 def calculate_average(numbers):
-    # Runtime Issue: Division by zero if the list is empty
     return sum(numbers) / len(numbers)
 
 
