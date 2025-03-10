@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My React App</title>
+</head>
+<body>
+    <script>
+        const API_KEY = "123456-SECRET-KEY";
+
+        function login() {
+            let username = document.getElementById("user").value;
+            let password = document.getElementById("pass").value;
+            fetch(`http://localhost:5000/login?user=${username}&pass=${password}`)
+                .then(res => res.text())
+                .then(data => console.log(data));
+        }
+    </script>
+
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</body>
+</html>
