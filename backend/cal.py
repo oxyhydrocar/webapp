@@ -8,12 +8,6 @@ def print_area(radius):
     area = calculate_area(radius)
     print("The area is: " + area)
 
-def greet_user(name, age):
-    if age > 18:
-        print("Hello" + name + ", you're an adult!")
-    else:
-        print("Hi " + name)
-
 def read_file(file_path):
     file = open(file_path)
     content = file.read()

@@ -1,2 +1,2 @@
-# codity-demo
-Demo repo for codity
+# webapp
+My simple web app
