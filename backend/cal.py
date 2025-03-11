@@ -57,16 +57,3 @@ def overly_complex_function(x):
                 print("Negative even number")
             else:
                 print("Negative odd number")
-
-
-def main():
-    calculate_area()
-    print_area(5)
-    greet_user("Alice", "25")
-    content = read_file("nonexistent_file.txt")
-    print(content)
-    obj = MyClass("test")
-    obj.increment()
-    print(obj.value)
-
-main()
